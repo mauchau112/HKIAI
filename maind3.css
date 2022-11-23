@@ -1,0 +1,958 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Document */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.tel{
+	
+	text-decoration:none;
+	color:#000000;
+}
+@media screen and (max-width: 767px) {
+	#popup{
+    } 
+    .popup-width{
+        width: 960px;
+    }    
+.tel{
+	
+	text-decoration: underline;
+	color:#2133FF;
+}
+}
+@media screen and (min-width: 767px) {
+     .popup-width{
+        width:100%;
+    } 
+}
+#popup{
+	padding: 0;
+    z-index: 3;
+    margin: 0px;
+    /* padding-top: 65px; */
+/*    width: 100%;*/
+    right: 0;
+    height: 100vh;
+    position: fixed;}
+#abs{
+	width: 450px;
+	height:auto;
+	float:right;
+	}
+.popup-width{
+        padding-top: 30px;
+    margin:0 auto;
+}
+.popupimg{
+	
+	z-index:1;
+	}
+.popupimg img{
+    width: 100%;
+}
+
+#closepop{
+	margin: 10px auto;
+	padding-bottom:5PX;
+	padding-left:2PX;
+	padding-right:2PX;
+	float:right;
+	font-size:16px;
+	font-weight:bold;
+	background:rgba(255,255,255,1.00);
+	width:35px;
+	height:35px;
+	margin-right:20px;
+	}
+#closepop img{
+	padding: 0;
+	
+	}
+#closepop a{
+	margin:0PX;
+	padding:0PX;}
+.poptop{
+	width:100%;
+	}
+
+@charset "UTF-8";
+
+@font-face 
+{
+font-family: MHeiHKBold;
+src: url(../font/MHeiHK-Bold.otf);
+}
+
+@font-face {
+font-family: MHeiHKLight;
+src: url(../font/MHeiHK-Light.otf);
+}
+
+@font-face {
+font-family: MHeiHKMedium;
+src: url(../font/MHeiHK-Medium.otf);
+}
+
+@font-face {
+font-family: MHeiHKXbold;
+src: url(../font/MHeiHK-Xbold.otf);
+}
+
+
+* { padding:0; margin:0; }
+
+
+
+body 
+{
+	font-family: MHeiHKMedium, Helvetica, Arial, sans-serif; 
+}
+
+
+#wrapper
+{	width:960px;	margin:0.5em auto;	}
+
+#banner
+{ width:100%;	height:70px; background:white;	}
+
+#bannerleft
+{	width:65%; float:left; height: 90px;}
+
+#bannerleft img
+{	margin:5px; }
+
+#bannerright
+{	width:35%; float:right; height:70px; background:white; text-align:right; }
+
+#bannerright p
+{	padding-right:15px; margin-top:-20px; padding-bottom:10px; }
+
+
+
+#bannerright img
+{	margin:5px; }
+
+
+
+
+#maintop
+{	width:100%;	height: 650px;    padding-bottom:20px; }
+
+
+#mainbottom
+{ padding-top:30px; 
+}
+
+#mainbottom #pect
+{
+	width:200px;		/*height:300px;*/		background:white;	float:left;
+}
+
+#slideimage
+{
+	width:560px; 		/* height:300px;*/		background:white;		float:left;
+}
+
+#mainbottom #whatnews
+{
+	width:200px;		/* height:300px;*/		background:white;	float:left;
+}
+
+
+/* ============================================== */
+/* Footer CSS */
+/* ============================================== */
+
+#footer
+{	width:100%;	height:100px; padding-top:10px;	margin-top:20px;	}
+
+#footerleft
+{	width:50%;	 float:left;  height:100px;	}
+
+#footerleft p
+{	font-family: MHeiHKMedium, Helvetica, Arial, sans-serif; 	text-align:left;	font-size:0.8em; padding-left:5px; padding-bottom:5px;	}
+
+#footerright
+{	width:47%; 	float:right;  height:100px;		text-align:right; }
+
+#frright
+{ width:55%;	float:right;	}
+
+#frleft
+{ width:23%;	float:right;	}
+
+#frleft p
+{ font-family: MHeiHKMedium, Helvetica, Arial, sans-serif; 	text-align:left;	font-size:0.8em; padding-left:5px;}
+
+
+/* ======================== */
+/* tags CSS */
+#one
+{ display:block; width:960px;	 padding:5px;}
+#tag1 { cursor:pointer; }
+
+#two
+{ display:none; width:960px;	padding:5px; }
+#tag2 { cursor:pointer; }
+
+#three
+{  padding:5px; display:none; width:960px; }
+#tag3 { cursor:pointer; }
+
+#four
+{ display:none; width:960px;	  padding:5px; }
+#tag4 { cursor:pointer; }
+
+
+
+#threeone
+{  }
+#tag31 { cursor:pointer; }
+
+#threetwo
+{  }
+#tag32 { cursor:pointer; }
+
+#three div div.taglabel
+{
+	font-family: MHeiHKMedium, Helvetica, Arial, sans-serif; 	
+	font-size:0.9em;
+	text-align:center;
+	width:160px; float:left;
+	background:url(../images/taglabel.png);
+	padding-right:0; padding-top:5px;		padding-bottom:5px;
+	margin-left:0;	 margin-right:0;	
+}
+
+#mainbottom div div.taglabel
+{
+	font-family: MHeiHKMedium, Helvetica, Arial, sans-serif; 	
+	font-size:0.9em;
+	text-align:center;
+	width:160px; float:left;
+	background:url(../images/taglabel.png);
+	padding-right:0; padding-top:5px;		padding-bottom:5px;
+	margin-left:0;	 margin-right:0;	
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+/*  flex-wrap: wrap;*/
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+.col-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.order-first {
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.order-last {
+  -ms-flex-order: 13;
+  order: 13;
+}
+
+.order-0 {
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.order-1 {
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.order-2 {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.order-3 {
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.order-4 {
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.order-5 {
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+.order-6 {
+  -ms-flex-order: 6;
+  order: 6;
+}
+
+.order-7 {
+  -ms-flex-order: 7;
+  order: 7;
+}
+
+.order-8 {
+  -ms-flex-order: 8;
+  order: 8;
+}
+
+.order-9 {
+  -ms-flex-order: 9;
+  order: 9;
+}
+
+.order-10 {
+  -ms-flex-order: 10;
+  order: 10;
+}
+
+.order-11 {
+  -ms-flex-order: 11;
+  order: 11;
+}
+
+.order-12 {
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+.offset-1 {
+  margin-left: 8.333333%;
+}
+
+.offset-2 {
+  margin-left: 16.666667%;
+}
+
+.offset-3 {
+  margin-left: 25%;
+}
+
+.offset-4 {
+  margin-left: 33.333333%;
+}
+
+.offset-5 {
+  margin-left: 41.666667%;
+}
+
+.offset-6 {
+  margin-left: 50%;
+}
+
+.offset-7 {
+  margin-left: 58.333333%;
+}
+
+.offset-8 {
+  margin-left: 66.666667%;
+}
+
+.offset-9 {
+  margin-left: 75%;
+}
+
+.offset-10 {
+  margin-left: 83.333333%;
+}
+
+.offset-11 {
+  margin-left: 91.666667%;
+}
+
+
+#Revit_curriculum_structure{
+     font-family: 'Noto Sans TC', sans-serif;
+    margin: 20px 0;
+/*    padding-left: 15px;*/
+    max-width: 960px;
+/*    padding-right: 15px;*/
+}
+#Revit_curriculum_structure h4{
+    margin-bottom: 5px;
+}
+#down_bim_book{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+#down_bim_book a{
+     -webkit-transition: background-color 0.4s; /* Safari */
+    transition: background-color 0.4s;
+/*    margin:  0 15px;*/
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+/*    background-color: #3663B2;*/
+    background-color: #244472;
+    display: block;
+    color: aliceblue;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 0.8em;
+}
+#down_bim_book a:hover{
+    background-color: #1b3963;
+}
+#down_bim_book i{
+        margin-top: 8px;
+    font-size: 20px;
+}
+#bim_book{
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    border-bottom:2px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    border-right:2px solid #CCCCCC;
+}
+.course-banner{
+    margin-bottom: 15px;
+    display: block;
+
+}
+#structure .col-4{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#structure{
+/*    padding-top: 15px;*/
+}
+#structure  a{
+    
+     -webkit-transition: ALL 0.2s; /* Safari */
+    transition: ALL 0.2s;
+/*
+     border-top:0px solid #CCCCCC;
+    border-bottom:2px solid #CCCCCC;
+    border-left:0px solid #CCCCCC;
+    border-right:2px solid #CCCCCC;
+*/
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #555;
+    
+}
+#structure  a:hover .item-color{
+    background-color: rgba(250,250,250 ,0.6);
+/*
+    
+    border-top:2px solid #878787;
+    border-bottom:2px solid #878787;
+    border-left:2px solid #878787;
+    border-right:2px solid #878787;
+*/
+}
+
+#structure .row{
+    flex-wrap: wrap;
+}
+#banner_big_structure-1{
+
+    flex: 0 0 30%;
+     max-width: 30%; 
+}
+#banner_big_structure-2{
+   flex: 0 0 70%;
+     max-width: 70%; 
+}
+.foricon{
+    padding: 0;
+}
+.foricon i{
+   margin-top: 42px;
+}
+.Top-img{
+    border-bottom: 10px solid #0098cd;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    min-height: 1px;
+    height: 115px;
+}
+.item-color{
+       -webkit-transition: ALL 0.2s; /* Safari */
+    transition: ALL 0.2s;
+    background-color: aqua;
+    width: 100%;
+    min-height: 1px;
+    height:130px;
+    background-color: rgba(250,250,250 ,0.0);
+}
+
+#course-Revit-icon{
+    background-image: url(../images/Revit/structure_banner/Revit.jpg);
+    background-size: cover;
+}
+#course-MEP-icon{
+    background-image: url(../images/Revit/structure_banner/MEP.jpg);
+    background-size: cover;
+}
+#course-CIVIL-icon{
+    background-image: url(../images/Revit/structure_banner/CIVIL.jpg);
+    background-size: cover;
+}
+#course-structure-icon{
+    background-image: url(../images/Revit/structure_banner/Structure.jpg);
+    background-size: cover;
+}
+#course-autocad-icon{
+    background-position: 25%;
+    height: 70px;
+    background-image: url(../images/autocadPage/Tnb-1.jpg);
+    background-size: cover;
+}
+#course-Tnb-2-icon{
+     background-image: url(../images/autocadPage/Tnb-2.jpg);
+    background-size: cover;
+}
+#course-Tnb-3-icon{
+     background-image: url(../images/autocadPage/Tnb-3.jpg);
+    background-size: cover;
+}
+#course-Tnb-4-icon{
+     background-image: url(../images/autocadPage/Tnb-4.jpg);
+    background-size: cover;
+}
+#course-Tnb-5-icon{
+     background-image: url(../images/autocadPage/Tnb-5.jpg);
+    background-size: cover;
+}
+#course-Tnb-3d3-icon{
+     background-image: url(../images/3dPage/Tnb-1.jpg);
+    background-size: cover;
+}
+
+.course-item{
+    padding-bottom: 15px;
+    border-radius:  0 0 10px 10px;
+    padding: 15px 10px 25px 10px;
+    border-bottom:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+.course-item h5{
+    height: 45px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.course-item p{
+    font-weight: bold;
+    font-size: .75em;
+    color: #0796D7;
+}
+.acadcourse-item p{
+     font-weight:normal;
+    font-size: .75em;
+    color: #333;
+}
+.acadcourse-item h5{
+    color: #0f748f;
+      height:50px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+.acadcourse-item {
+    padding-bottom: 15px;
+    border-radius:  0 0 10px 10px;
+    padding: 15px 10px 25px 10px;
+    border-bottom:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+}
+.autocadpagenav h5{
+    margin-bottom: 6px;
+    text-align:left;
+    font-weight: bold;
+    font-size:0.89em;
+    color: #0f748f;
+}
+.autocadpagenav p{
+        font-weight: normal;
+        font-size: 0.85em;
+   color: #333;
+}
+.autocadpagenav{
+     text-decoration: none;
+}
+.autocadpagenav:hover .item-color{
+    background-color: rgba(250,250,250 ,0.6);
+}
+.acadnavbtn i {
+    margin-right: 6px;
+}
+.acadnavbtn{
+    color: #0f748f !important;
+    font-size: 11pt !important;
+ margin-top: 15px;
+}
+#navactive{
+    display: block;
+}
+.applyitem{
+        border-radius: 15px;
+        padding: 35px;
+    background-color: #F4f5f5;
+    
+}
+.applyitem p{
+    font-size: 13pt;
+    color: #007d9a;
+    
+}
+.applyitem a{
+    -webkit-transition: ALL 0.2s; /* Safari */
+    transition: ALL 0.2s;
+        display: inline-block;
+    text-decoration: none;
+    background-color: #049AB2;
+    color: #fff;
+    padding:5px 15px;
+     border-radius:5px;
+}
+.applyitem a:hover{
+    background-color: #057F93;
+}
+.applycol{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+      flex-direction: row;
+     flex-wrap: nowrap ;
+   display: inline-flex;
+}
+.applycol div{
+
+}
+.apcol-1{
+   flex: 0 0 10%;
+}
+.apcol-2{
+   flex: 0 0 20%;
+}
+.apcol-3{
+   flex: 0 0 30%;
+}
+.apcol-4{
+   flex: 0 0 30%;
+}
+.apcol-5{
+   flex: 0 0 30%;
+}
+.apcol-6{
+   flex: 0 0 30%;
+}
+.apcol-7{
+   flex: 0 0 70%;
+}
+.apcol-8{
+   flex: 0 0 80%;
+}
+.apcol-9{
+   flex: 0 0 90%;
+}
+.apcol-8 p{
+    line-height: 1.6;
+    font-size: 13px;
+    padding: 0px 0px;
+    text-align: right;
+}
+.workshop_title{
+    font-size:25px;
+    font-weight: 100;
+}
+#workshopform{
+    width: 40%;
+}
+#apply_workshop_success{
+    display: block;
+    padding-top: 15px;
+}
+#apply_workshop_success h2{
+   text-align: center;
+}
+.comedata{
+   margin-bottom: 1rem;
+    padding-right: 40%; 
+}
+#comedata{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#autocadindexbanner .col-3{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.EventPhotoList{
+    padding-right: 5px;
+    list-style-type:none;
+}
+.EventPhotoList li{
+    opacity: 0.4;
+    padding-right: 10px;
+    width: 25%;
+    float: left;
+}
+.EventPhotoList li:hover{
+    opacity: 1;
+}
+.EventsPage p{
+    font-size: 16px;
+}
+.Eventstopinfo{
+    margin-bottom: 20px;
+}
+.EventsPageSectionText h2{
+       margin-top: 60px;
+}
+.EventsPageSectionText .EventPhotoList{
+      position: absolute;
+    bottom: 0;
+    
+}
+.owl-dots{
+    display: none;
+}
+.EventsPageSection{
+    margin-bottom: 50px;
+}
+#course_select .title img{
+      display: block;
+        margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:70%;
+}
+#course_select{
+    padding: 25px 50px 25px 50px;
+/*    background-image: url(../images/3dPage/course_select/3d_banner_background.jpg);*/
+}
+#course_select .item{
+        -webkit-transition: ALL 0.2s; /* Safari */
+    transition: ALL 0.2s;
+    opacity:1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+   
+}
+#course_select .item:hover{
+    opacity: 0.6; 
+}
+#course_select .item img{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+   
+}
+#course_select .dnavbtn{
+    margin-top: 10px;
+ padding-left: 15px;
+}
+#course_select a{
+    color: #333333 !important;
+    font-size: 11pt !important;
+        font-family: 'Noto Sans TC', sans-serif;
+ text-decoration: none;
+    
+}
+.dnavbtn i {
+    margin-right: 6px;
+}
+.Student_share .content{
+    vertical-align: text-bottom;
+/*    position: absolute;*/
+    bottom: 0;
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+.Student_share {
+  
+ margin-top: 15px;
+}
+.Student_share .sc-ap{
+    font-weight: bolder;
+    font-size: 14px;
+}
+.underline{
+           padding-bottom: 1px;
+    border-bottom: 2px #ddd solid;
+    margin-bottom: 3px;
+}
+.align-mid
+{
+        margin-top: 80px;
+}
+.school-part-image:nth-child(odd){
+    padding-right: 5px;
+    
+}
+.school-part-image:nth-child(even){
+    padding-left: 5px;
+    
+}
+.BIM_free_course img 
+{   -webkit-transition: ALL 0.5s; /* Safari */
+    transition: ALL 0.2s;
+/*    width: 90%;*/
+    margin: 0 auto;
+    display: block;
+}
+.BIM_free_course a:hover img
+{
+    opacity:0.7;   
+}
+.BIM_free_course{
+    padding-bottom: 15px;
+}
+#Revit_tag_banner{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Revit_tag_banner.col-3:first-child{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#Revit_tag_banner .col-3{
+     -webkit-transition: ALL 0.5s; /* Safari */
+    transition: ALL 0.2s;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#Revit_tag_banner .col-3:hover{
+    opacity: 0.7;
+}
+#Revit_tag_banner .col-3:last-child{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
